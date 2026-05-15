@@ -26,31 +26,34 @@
 </nav>
 
 <h2 style="color: rgb(252, 10, 188);">Comprar</h2>
+<form class="formulario" action="https://formspree.io/f/xykoqnqe" method="POST">
 
-<form class="formulario">
+  <h2>Finalizar Compra</h2>
 
-    <label>Nombre Completo</label>
-    <input type="text" placeholder="Escribe tu nombre">
+  <label>Nombre Completo</label>
+  <input type="text" name="nombre" required>
 
-    <label>Correo Electrónico</label>
-    <input type="email" placeholder="Escribe tu correo">
+  <label>Correo Electrónico</label>
+  <input type="email" name="email" required>
 
-    <label>Dirección</label>
-    <input type="text" placeholder="Escribe tu dirección">
+  <label>Dirección</label>
+  <input type="text" name="direccion" required>
 
-    <label>Producto</label>
-    <input type="text" placeholder="Producto que deseas">
+  <label>Producto</label>
+  <input type="text" name="producto" required>
 
-    <label>Método de Pago</label>
-    <select>
-        <option>Tarjeta</option>
-        <option>Efectivo</option>
-        <option>Transferencia</option>
-    </select>
+  <label>Método de Pago</label>
+  <select name="pago" required>
+    <option value="">Selecciona una opción</option>
+    <option value="tarjeta">Tarjeta</option>
+    <option value="efectivo">Efectivo</option>
+    <option value="transferencia">Transferencia</option>
+  </select>
 
-    <button type="submit">Comprar</button>
+  <button type="submit">Comprar ahora</button>
 
 </form>
 
+</form>
 </body>
 </html>
